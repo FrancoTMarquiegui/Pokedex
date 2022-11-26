@@ -1,0 +1,142 @@
+
+body{
+  background-color: #FC7A14;
+}
+.pokemonContent {
+  background-image: url('https://www.gratistodo.com/wp-content/uploads/2016/09/Pokemon-6.jpg');
+  
+}
+
+.fondo {
+  background-color: red;
+}
+
+.input  {
+  border-radius: 20px;
+}
+
+.buttonInput {
+  border-radius: 20px;
+  text-align: center;
+}
+
+h1  {
+  color: aliceblue;
+}
+
+.ul {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 100px;
+}
+
+a{
+  border: 2px solid black;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #002985;
+}
+
+.welcome {
+  text-align: center;
+
+}
+
+.search {
+  background-color: #002985;
+  border: 1px transparent #002985;
+  border-radius: 10px;
+}
+
+.inputPokemon .select {
+  border-radius: 10px;
+}
+
+.select {
+  border-radius: 10px;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.nombre {
+  display: flex;
+  justify-content: center;
+  text-align: center;  
+}
+
+.data {
+  margin-left: 30px;
+  color: aliceblue;
+}
+
+.id {
+  color: aliceblue;
+  margin-left: 10px;
+}
+
+.titulo {
+  font-size: 80px;
+}
+
+.welcome {
+  font-size: 40px;
+}
+
+.name {
+
+  margin-top: 150px;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+
+}
+
+.box {
+  display: flex;
+  gap: 300px;
+  justify-content: center;
+  color: aliceblue;
+}
+
+.card {
+  background-color: #002985;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  border-radius: 40px;
+}
+
+img {
+  width: 180px;
+  height: 180px;
+}
+
+.linea {
+  width: 500px;
+  height: 3px;
+  background-color: aliceblue;
+}
+
+.input-name {
+ text-align: center;
+ margin-top: 300px;
+ color: aliceblue;
+}
+
+
+.weigth {
+  color: aliceblue;
+}
+
+.height {
+  color: aliceblue;
+}
+

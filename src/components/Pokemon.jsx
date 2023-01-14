@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import axios from'axios';
 import PokemonCard from './PokemonCard';
 import { useNavigate } from 'react-router-dom';
+import Pagination from './Paginacion/Pagination';
 
 //https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1154
 
@@ -12,6 +13,8 @@ const Pokemon = () => {
   const [ pokemonList, setPokemonList ] = useState([]);
   const [ pokemonName, setPokemonName ] = useState("");
   const [ pokemonType, setPokemonType] = useState([]);
+
+ 
 
 
   const navigate = useNavigate();
@@ -24,6 +27,8 @@ const Pokemon = () => {
      .then(res => setPokemonType(res.data.results));
 
   },[])
+
+
 
   
 
@@ -41,9 +46,10 @@ const Pokemon = () => {
 
   return (
     <div className='pokemonContent'>
+      <div className="linea-red1"></div>
+      <div className="linea-black1"></div>
       <div className="welcome"> 
-       <h1 className='titulo'>Pokemon</h1>
-       <p className='welcome'>welcome {userName}!</p>    
+       <p className='welcome'>Welcome {userName}, here you can find your favorite pokemon</p>    
         <input 
             className='inputPokemon'
             type="text" 
@@ -63,14 +69,16 @@ const Pokemon = () => {
             <option 
             value={pokemonType.url}
             key={pokemonType.name}
+            className='block'
             >
               {pokemonType.name}
             </option>
-          ))}         
+          ))} 
+             
          </select>        
       </div>
      
-      <ul className='ul'> 
+      <ul className='ul block'> 
       {pokemonList.map((pokemon) => (
          <PokemonCard  
          url={pokemon.url ? pokemon.url : pokemon.pokemon?.url} 

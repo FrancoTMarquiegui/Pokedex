@@ -1,0 +1,41 @@
+.fondo {
+  height: 500px;
+}
+
+
+.input-name {
+  margin: auto;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.input {
+  margin-left: 700px;
+  width: 250px;
+  height: 40px;
+}
+
+.buttonInput {
+  background-color: #D93F3F;
+  width: 100px;
+  height: 46.5px;
+  border: transparent;
+}
+
+.name-input {
+  color: #D93F3F;
+}
+
+.linea-red {
+  height: 100px;
+  width: 100%;
+  background-color: #D93F3F;
+  margin-top: 312px;
+}
+
+.linea-black {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  
+}

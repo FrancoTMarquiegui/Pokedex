@@ -21,6 +21,7 @@ const PokemonCard = ({url}) => {
       <img src={pokemon.sprites?.front_default} alt="" />
       </div>
       <h1 className='nombre'>{pokemon.name}</h1>
+      <div className="linea-card"></div>
       <div className='data'>     
       <p><b>Weigth: </b>{pokemon.weight}</p>
       <p><b>Heigth: </b>{pokemon.height}</p>

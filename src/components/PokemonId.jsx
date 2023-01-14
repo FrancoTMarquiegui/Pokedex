@@ -17,9 +17,9 @@ const PokemonId = () => {
   return (
     <div className='card'>
      <div className='name'> 
-        <img src={pokemon.sprites?.front_default} alt="" />
-        <h1>{pokemon.name}</h1>
+        <img className='name' src={pokemon.sprites?.front_default} alt="" />
       </div>
+      <h1 className='pokemon__name'>{pokemon.name}</h1>
       <div className='linea'></div>
       <div className='linea2'></div>
     <div className='info'> 
